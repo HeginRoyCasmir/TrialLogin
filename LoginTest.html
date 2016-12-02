@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    if(x=="student"){
+   document.getElementById("demo").innerHTML ="<from><div class='container'><label><b>Username</b></label><input type='text' placeholder='Enter Username' name='uname' required><label><b>Password</b></label><input type='password' placeholder='Enter Password' name='psw' required><button type='submit'>Login</button></form>";
+    
+    }else if(x=="teacher"){
+   document.getElementById("demo").innerHTML ="<from><p>Roy</p></form>";
+    }else if(x=="principal"){
+   document.getElementById("demo").innerHTML ="<from><p>C</p></form>";
+    }
+}
+</script>
+
+</head>
+<body>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="student">Student
+  <option value="teacher">Teacher
+  <option value="principal">Principal
+</select>
+
+<p id="demo"></p>
+
+
+</body>
+</html>
+
